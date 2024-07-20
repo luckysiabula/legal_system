@@ -1,0 +1,135 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav .logo img {
+  max-width: 200px;
+}
+
+nav .nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav .nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero .hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero .hero-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero .cta {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Image Slider */
+.image-slider {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  height: 500px; /* Adjust height as needed */
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+.image-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-image {
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Info Section */
+.info-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.info-box {
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.info-box h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  font-size: 1em;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+}

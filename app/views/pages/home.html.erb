@@ -1,12 +1,73 @@
-<!-- app/views/pages/home.html.erb -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="jumbotron mt-5 text-center">
-        <h1>Welcome to the Legal Site</h1>
-        <p>Find me in app/views/pages/home.html.erb</p>
-        <hr class="my-4">
-        <p>More content here...</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Legal System</title>
+  <%= stylesheet_link_tag 'gallery', media: 'all' %>
+  <%= javascript_include_tag 'slider' %> <!-- Ensure you have a corresponding slider.js file in app/assets/javascripts -->
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <%= image_tag 'istockphoto-1303997113-612x612.jpg', alt: 'Legal System Logo' %>
       </div>
+      <ul class="nav-links"
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to the Legal System</h1>
+      <p>Empowering Justice and Legal Services</p>
+      <a href="#" class="cta">Learn More</a>
     </div>
+  </section>
+
+  <section class="image-slider">
+    <div class="image-track">
+      <%= image_tag 'gettyimages-200142145-001-612x612.jpg', alt: 'Getty Image 1', class: 'slide-image' %>
+      <%= image_tag 'gettyimages-104821087-612x612.jpg', alt: 'Getty Image 2', class: 'slide-image' %>
+      <%= image_tag 'gettyimages-876701606-612x612.jpg', alt: 'Getty Image 3', class: 'slide-image' %>
+      <%= image_tag 'gettyimages-1459710019-612x612.jpg', alt: 'Getty Image 4', class: 'slide-image' %>
+    </div>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </section>
+
+  <section class="info-section">
+    <div class="info-box">
+      <h2>Innovative Legal Solutions</h2>
+      <p>Discover advanced legal tools and services designed to streamline case management, enhance research efficiency, and ensure compliance.</p>
+    </div>
+    <div class="info-box">
+      <h2>Leading-Edge Technology</h2>
+      <p>Our state-of-the-art technology integrates AI and machine learning to provide insightful analytics, predictive case outcomes, and automated document processing.</p>
+    </div>
+    <div class="info-box">
+      <h2>Legal Education and Resources</h2>
+      <p>Access our extensive library of legal articles, case studies, and training modules to stay updated with the latest industry trends and best practices.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Legal System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
